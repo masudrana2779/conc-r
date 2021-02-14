@@ -7,7 +7,7 @@ import latest_work_img_2 from '../../../../static/assets/images/latest_work_img_
 import latest_work_img_3 from '../../../../static/assets/images/latest_work_img_3.jpg';
 import linkIcon from '../../../../static/assets/images/link_icon.png';
 
-const LatestWork = () => {
+const LatestWork = ({name,social ,type }) => {
 
     const latestWrkImgs = [
         latest_work_img_1,
@@ -50,7 +50,7 @@ const LatestWork = () => {
                 </div>
                 <Slider className="row latest_work_slider" {...settings}>
                     {latestWrkImgs.map((latestWrkImg, i) =>
-                        <LatestWorkItem latestWrkImg={latestWrkImg} linkIcon={linkIcon} link={'#'} key={i}/>
+                        <LatestWorkItem latestWrkImg={latestWrkImg} linkIcon={linkIcon} link={'#'} key={i} name={name} social={social} type={type}/>
                     )}
                 </Slider>
             </div>

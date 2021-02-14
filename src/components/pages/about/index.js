@@ -4,6 +4,7 @@ import LatestWork from "../../common/sections/latestWork";
 import ClientFeedBack from "../../common/sections/clientFeedback";
 import ContactSection from "../../common/sections/contact";
 import InnerBanner from "../../common/sections/innerBanner/innerBanner";
+import bgImg from '../../../static/assets/images/about_banner_bg.jpg';
 
 class About extends Component {
     constructor(props) {
@@ -15,7 +16,7 @@ class About extends Component {
     render() {
         return (
             <div className={'aboutPageWrap'}>
-                <InnerBanner title={'About Us'} />
+                <InnerBanner title={'About Us'} bgImg={bgImg} />
                 <AboutSection />
                 <ClientFeedBack />
                 <LatestWork />

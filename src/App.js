@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
 import Home from "./components/pages/home/home";
-import {Switch, Route} from 'react-router-dom';
+import {Switch, Route,
+    useRouteMatch,
+    useParams} from 'react-router-dom';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './static/assets/sass/style.scss';
@@ -17,6 +19,7 @@ import BlogDetails from "./components/pages/blogSingle";
 
 
 function App() {
+    let match = useRouteMatch();
     return (
         <div>
             <Header />
@@ -26,7 +29,8 @@ function App() {
                 <Route exact path={services} component={Service}/>
                 <Route exact path={blog} component={BlogFunctional}/>
                 <Route exact path={contact} component={Contact}/>
-                <Route exact path={blogDetails} component={BlogDetails}/>
+                <Route exact path={`${blog}/:topicId`} component={BlogDetails}/>
+                {/*<Route exact path={blogDetails} component={BlogDetails}/>*/}
             </Switch>
             <Footer />
         </div>

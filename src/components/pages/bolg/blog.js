@@ -3,6 +3,7 @@ import axios from "axios";
 import PostsApi from '../../../api.json';
 import InnerBanner from "../../common/sections/innerBanner/innerBanner";
 import BlogPostBody from "./blogPostBody";
+import bgImg from '../../../static/assets/images/blog_bg.jpg';
 
 const BlogFunctional = () => {
     const [posts, setPosts] = useState([]);
@@ -48,7 +49,7 @@ const BlogFunctional = () => {
 
     return (
         <div className={'aboutPageWrap'}>
-            <InnerBanner title={'Classic Blog'}/>
+            <InnerBanner title={'Classic Blog'} bgImg={bgImg}/>
             <BlogPostBody items={currentPosts} loading={loading} postPerPage={postsPerPage} posts={posts}
                           paginate={paginate} setPrevPageNumber={setPrevPageNumber}
                           setNextPageNumber={setNextPageNumber} currentPage={currentPage}

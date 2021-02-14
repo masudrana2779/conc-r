@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import logo from '../../../static/assets/images/logo.png';
 import phoneIcon from '../../../static/assets/images/phone-icon.png';
 import {about, blog, contact, home, services} from "../../../route";
+import {Nav, Navbar} from "react-bootstrap";
+import {Link, NavLink} from "react-router-dom";
 
 const Header = () => {
 
@@ -16,33 +18,32 @@ const Header = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">
-                        <nav className="navbar navbar-expand-lg navbar_header">
-                            <a className="navbar-brand logo" href={home}>
+                        <Navbar className="navbar navbar-expand-lg navbar_header" expand="lg">
+                            <Link className="navbar-brand logo" to={home}>
                                 <img src={logo} alt="logo"/>
-                            </a>
-                            <button className="navbar-toggler navbar_btn" type="button" data-toggle="collapse"
-                                    data-target="#headerNavbar" aria-expanded="false">
-                                Bar
-                            </button>
+                            </Link>
+                            <Navbar.Toggle aria-controls="basic-navbar-nav">
+                                <p>Bar</p>
+                            </Navbar.Toggle>
 
-                            <div className="collapse navbar-collapse header_menu" id="headerNavbar">
-                                <ul className="navbar-nav ml-auto">
-                                    <li className="nav-item active">
-                                        <a className="nav-link" href={home}>Home</a>
+                            <Navbar.Collapse className="header_menu" id="basic-navbar-nav">
+                                <Nav className="navbar-nav ml-auto">
+                                    <li>
+                                        <NavLink  to={home}>Home</NavLink>
                                     </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href={about}>About</a>
+                                    <li>
+                                        <NavLink to={about}>about</NavLink>
                                     </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href={services}>Services</a>
+                                    <li>
+                                        <NavLink to={services}>Services</NavLink>
                                     </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href={blog}>Blog</a>
+                                    <li>
+                                        <NavLink to={blog}>Blog</NavLink>
                                     </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href={contact}>Contact</a>
+                                    <li>
+                                        <NavLink to={contact}>Contact</NavLink>
                                     </li>
-                                </ul>
+                                </Nav>
                                 <div className="contact_Us">
                                     <div className="icon"><img src={phoneIcon} alt="icon"/></div>
                                     <div className="contact">
@@ -50,8 +51,8 @@ const Header = () => {
                                         <p className="con_link brand-color"><a href="#">964 643 475</a></p>
                                     </div>
                                 </div>
-                            </div>
-                        </nav>
+                            </Navbar.Collapse>
+                        </Navbar>
                     </div>
                 </div>
             </div>

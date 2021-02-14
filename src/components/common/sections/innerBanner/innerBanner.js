@@ -1,8 +1,8 @@
 import React from "react";
 
-const InnerBanner = ({title}) => {
+const InnerBanner = ({title,bgImg}) => {
     return (
-        <section className="about_banner_wrap banner_wrap">
+        <section className="banner_wrap" style={{backgroundImage: `url(${bgImg})`}}>
             <div className="container">
                 <div className="row">
                     <div className="col-md-12 col-sm-12 col-xs-12">
