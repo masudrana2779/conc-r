@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import logo from '../../../static/assets/images/logo.png';
 import phoneIcon from '../../../static/assets/images/phone-icon.png';
+import {about, blog, contact, home, services} from "../../../route";
 
 const Header = () => {
 
@@ -16,7 +17,7 @@ const Header = () => {
                 <div className="row">
                     <div className="col-md-12">
                         <nav className="navbar navbar-expand-lg navbar_header">
-                            <a className="navbar-brand logo" href="index.html">
+                            <a className="navbar-brand logo" href={home}>
                                 <img src={logo} alt="logo"/>
                             </a>
                             <button className="navbar-toggler navbar_btn" type="button" data-toggle="collapse"
@@ -27,19 +28,19 @@ const Header = () => {
                             <div className="collapse navbar-collapse header_menu" id="headerNavbar">
                                 <ul className="navbar-nav ml-auto">
                                     <li className="nav-item active">
-                                        <a className="nav-link" href="index.html">Home</a>
+                                        <a className="nav-link" href={home}>Home</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="about_us.html">About</a>
+                                        <a className="nav-link" href={about}>About</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="services.html">Services</a>
+                                        <a className="nav-link" href={services}>Services</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="blog.html">Blog</a>
+                                        <a className="nav-link" href={blog}>Blog</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="contact_us.html">Contact</a>
+                                        <a className="nav-link" href={contact}>Contact</a>
                                     </li>
                                 </ul>
                                 <div className="contact_Us">

@@ -13,7 +13,6 @@ class Home extends Component {
     render() {
         return (
             <div className={'homeWrap'}>
-                <Header />
                 <HomeBanner />
                 <ServiceSectionWrap />
                 <AboutSection />
@@ -21,7 +20,6 @@ class Home extends Component {
                 <LatestWork />
                 <ClientFeedBack />
                 <ContactSection />
-                <Footer />
             </div>
         );
     }
