@@ -29,7 +29,7 @@ function App() {
                 <Route exact path={services} component={Service}/>
                 <Route exact path={blog} component={BlogFunctional}/>
                 <Route exact path={contact} component={Contact}/>
-                <Route exact path={`${blog}/:topicId`} component={BlogDetails}/>
+                <Route exact path={`${blogDetails}/:topicId`} component={BlogDetails}/>
                 {/*<Route exact path={blogDetails} component={BlogDetails}/>*/}
             </Switch>
             <Footer />

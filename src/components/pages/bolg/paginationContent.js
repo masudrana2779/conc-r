@@ -14,15 +14,15 @@ const PaginationContent = ({postPerPage, totalPots, paginate, currentPage,setNex
             <nav className="navigation">
                 <ul className="pagination justify-content-center">
                     {startPageNumber < 5 ? "" :
-                        <li><Link href={'#'} onClick={() => setPrevPageNumber(currentPage - 5)}><i className="arrow_left"></i></Link>
+                        <li><Link to={'#'} onClick={() => setPrevPageNumber(currentPage - 5)}><i className="arrow_left"></i></Link>
                         </li>}
-                    {pageNumbers.slice(startPageNumber, endPageNumber).map(pageNumber =>
-                        <li className={pageNumber === currentPage ? 'active' : ''}>
-                            <Link href="#" onClick={() => paginate(pageNumber)}>{pageNumber}</Link>
+                    {pageNumbers.slice(startPageNumber, endPageNumber).map((pageNumber, i) =>
+                        <li className={pageNumber === currentPage ? 'active' : ''} key={i}>
+                            <Link to="#" onClick={() => paginate(pageNumber)}>{pageNumber}</Link>
                         </li>
                     )}
                     {endPageNumber > pageNumbers.length - 1 ? "" :
-                        <li><Link href={'#'} onClick={() => setNextPageNumber(currentPage + 5)}><i className="arrow_right"></i></Link>
+                        <li><Link to={'#'} onClick={() => setNextPageNumber(currentPage + 5)}><i className="arrow_right"></i></Link>
                         </li>}
                 </ul>
             </nav>
