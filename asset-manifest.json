@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/conc-r/static/css/main.ed14e690.chunk.css",
+    "main.js": "/conc-r/static/js/main.e3dac1bb.chunk.js",
+    "main.js.map": "/conc-r/static/js/main.e3dac1bb.chunk.js.map",
+    "runtime-main.js": "/conc-r/static/js/runtime-main.5148f9a7.js",
+    "runtime-main.js.map": "/conc-r/static/js/runtime-main.5148f9a7.js.map",
+    "static/css/2.a888756e.chunk.css": "/conc-r/static/css/2.a888756e.chunk.css",
+    "static/js/2.03f8e386.chunk.js": "/conc-r/static/js/2.03f8e386.chunk.js",
+    "static/js/2.03f8e386.chunk.js.map": "/conc-r/static/js/2.03f8e386.chunk.js.map",
+    "static/js/3.35c691b5.chunk.js": "/conc-r/static/js/3.35c691b5.chunk.js",
+    "static/js/3.35c691b5.chunk.js.map": "/conc-r/static/js/3.35c691b5.chunk.js.map",
+    "index.html": "/conc-r/index.html",
+    "static/css/2.a888756e.chunk.css.map": "/conc-r/static/css/2.a888756e.chunk.css.map",
+    "static/css/main.ed14e690.chunk.css.map": "/conc-r/static/css/main.ed14e690.chunk.css.map",
+    "static/js/2.03f8e386.chunk.js.LICENSE.txt": "/conc-r/static/js/2.03f8e386.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/conc-r/static/media/subs_bg.9c9f6128.jpg",
+    "static/media/about_img.74abdd86.jpg": "/conc-r/static/media/about_img.74abdd86.jpg",
+    "static/media/banner_bg.ab6d7ccb.jpg": "/conc-r/static/media/banner_bg.ab6d7ccb.jpg",
+    "static/media/banner_bg1.2d7e78c2.jpg": "/conc-r/static/media/banner_bg1.2d7e78c2.jpg",
+    "static/media/latest_work_img_1.141aa242.jpg": "/conc-r/static/media/latest_work_img_1.141aa242.jpg",
+    "static/media/latest_work_img_2.b4bcf676.jpg": "/conc-r/static/media/latest_work_img_2.b4bcf676.jpg",
+    "static/media/latest_work_img_3.b1cdc741.jpg": "/conc-r/static/media/latest_work_img_3.b1cdc741.jpg",
+    "static/media/post_img_1.41535ea4.jpg": "/conc-r/static/media/post_img_1.41535ea4.jpg",
+    "static/media/post_single_img.824e31c8.jpg": "/conc-r/static/media/post_single_img.824e31c8.jpg",
+    "static/media/services-img-1.8245ef7e.jpg": "/conc-r/static/media/services-img-1.8245ef7e.jpg",
+    "static/media/services-img-2.b0b05775.jpg": "/conc-r/static/media/services-img-2.b0b05775.jpg",
+    "static/media/services-img-3.8670bf0a.jpg": "/conc-r/static/media/services-img-3.8670bf0a.jpg",
+    "static/media/services-img-4.914008b5.jpg": "/conc-r/static/media/services-img-4.914008b5.jpg",
+    "static/media/services-img-5.aa9ab952.jpg": "/conc-r/static/media/services-img-5.aa9ab952.jpg",
+    "static/media/services-img-6.2e758160.jpg": "/conc-r/static/media/services-img-6.2e758160.jpg",
+    "static/media/slick-theme.css": "/conc-r/static/media/slick.c94f7671.ttf",
+    "static/media/team_img_1.78de62d1.png": "/conc-r/static/media/team_img_1.78de62d1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5148f9a7.js",
+    "static/css/2.a888756e.chunk.css",
+    "static/js/2.03f8e386.chunk.js",
+    "static/css/main.ed14e690.chunk.css",
+    "static/js/main.e3dac1bb.chunk.js"
+  ]
+}
