@@ -19,7 +19,7 @@ const BlogDetailsBody = ({topicId}) => {
             setloaddingData(false);
         }
         fetchPosts();
-    }, [])
+    }, [topicId])
     return (
         <section className="blog_wrap pt_90">
             <div className="container">
